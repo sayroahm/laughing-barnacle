@@ -1,11 +1,12 @@
 {
-  "name": "json-server",
+  "name": "my-json-api",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.3.1"
   }
 }
