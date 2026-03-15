@@ -8,8 +8,7 @@ app.get("/api/data", (req, res) => {
 
 app.all("*", (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.status(200).send(JSON.stringify(
-    {"errors":[{"code":0,"message":""}]}
+  res.status(403).send(JSON.stringify({"errors":[{"code":0,"message":""}]}
 , null, 2));
 });
 
