@@ -3,7 +3,7 @@ const app = express();
 
 app.all("*", (req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.status(426).send(JSON.stringify({ "errors": [ { "code": 0, "message": "" } ] }));
+  res.status(451).send(JSON.stringify({ "errors": [ { "code": 0, "message": "" } ] }));
 });
 
 const PORT = process.env.PORT || 3000;
